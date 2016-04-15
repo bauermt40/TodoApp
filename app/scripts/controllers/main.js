@@ -8,10 +8,8 @@
  * Controller of the todoAppApp
  */
 angular.module('todoAppApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+  .controller('MainCtrl', function ($scope) {
+    $scope.todos = [
+      'Item 1', 'Item 2', 'Item 3'
     ];
   });
